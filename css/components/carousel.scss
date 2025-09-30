@@ -1,0 +1,72 @@
+.carousel {
+  position: relative;
+  overflow: hidden;
+  border-radius: 1rem;
+  border: 1px solid var(--border);
+  background: var(--bg);
+  height: 400px;
+
+  &__viewport {
+    overflow: hidden;
+    height: 100%;
+  }
+
+  &__track {
+    display: flex;
+    transition: transform 0.4s ease;
+    height: 100%;
+  }
+
+  &__slide {
+    min-width: 100%;
+    width: 100%;
+
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+
+  &__btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(0, 0, 0, 0.35);
+    color: #fff;
+    border: 0;
+    width: 42px;
+    height: 42px;
+    border-radius: 50%;
+    cursor: pointer;
+
+    &--prev {
+      left: 0.5rem;
+    }
+
+    &--next {
+      right: 0.5rem;
+    }
+  }
+
+  &__dots {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 0.5rem;
+    display: flex;
+    gap: 0.5rem;
+
+    button {
+      width: 8px;
+      height: 8px;
+      border-radius: 999px;
+      border: 0;
+      background: var(--border);
+
+      &[aria-current="true"] {
+        background: var(--primary);
+      }
+    }
+  }
+}

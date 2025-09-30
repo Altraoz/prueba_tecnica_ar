@@ -1,0 +1,553 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>AR Construcciones · Landing</title>
+    <meta
+      name="description"
+      content="Landing page responsive sin frameworks para prueba técnica de maquetación."
+    />
+    <link rel="preload" href="img/hero.svg" as="image" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="icon" href="img/favicon.ico" type="image/x-icon" />
+  </head>
+  <body class="">
+    <div class="navbar" style="background-color: red">
+      <button
+        class="nav__toggle"
+        aria-expanded="false"
+        aria-controls="nav"
+        aria-label="Abrir menú"
+      >
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+      <nav id="nav" class="nav">
+        <a href="#inicio">Inicio</a>
+        <a href="#servicios">Servicios</a>
+        <a href="#proyectos">Proyectos</a>
+        <a href="#lanzamientos">Próximos lanzamientos</a>
+      </nav>
+    </div>
+
+    <main id="contenido" class="main" role="main" style="position: relative">
+      <div class="land_section">
+        <div
+          class="background"
+          style="
+            background-image: url('img/landing/0fda9765-3d2d-40b4-b14e-13bc7fc493ad_1759203595.webp');
+          "
+        ></div>
+        <div class="content h-margin v-margin">
+          <header class="navbar">
+            <nav style="display: flex; align-items: center; gap: 1rem">
+              <button class="button-1">Inicio</button>
+              <button class="button-1">Servicios</button>
+              <button class="button-1">Proyectos</button>
+              <button class="button-1">Próximos lanzamientos</button>
+            </nav>
+            <div style="display: flex">
+              <img
+                src="img/ar-logo-header.webp"
+                style="height: 64px; object-fit: contain"
+                alt="Usuario"
+              />
+              <button class="button-2">Mi cuenta</button>
+            </div>
+          </header>
+          <div class="info">
+            <div class="left-buttons">
+              <button class="button-1">Ofrece lotes</button>
+              <button class="button-1">Ofrece casas</button>
+              <button class="button-1">Ofrece fincas</button>
+            </div>
+            <div class="right-text">
+              <p>
+                Construimos espacios donde nacen tus sueños y crece tu familia.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <section
+        id="proyectos"
+        class="section section--alt section--padded"
+        aria-labelledby="proyectos-title"
+      >
+        <div class="container">
+          <h2 id="proyectos-title" class="section__title">
+            Proyectos destacados
+          </h2>
+
+          <div class="carousel" data-carousel>
+            <div
+              class="carousel__viewport"
+              role="region"
+              aria-label="Carrusel de proyectos"
+            >
+              <div class="carousel__track">
+                <div
+                  class="carousel__slide"
+                  aria-roledescription="slide"
+                  aria-label="1 de 3"
+                >
+                  <img
+                    src="img/carousel/cover_reserva_de_la_26.webp"
+                    width="800"
+                    height="500"
+                    alt="Proyecto 1"
+                  />
+                </div>
+                <div
+                  class="carousel__slide"
+                  aria-roledescription="slide"
+                  aria-label="2 de 3"
+                >
+                  <img
+                    src="img/carousel/F7-Parque-Interno-FACHADA.webp"
+                    width="800"
+                    height="500"
+                    alt="Proyecto 2"
+                  />
+                </div>
+                <div
+                  class="carousel__slide"
+                  aria-roledescription="slide"
+                  aria-label="3 de 3"
+                >
+                  <img
+                    src="img/carousel/ParqueComunal-PCOccidental-banner.webp"
+                    width="800"
+                    height="500"
+                    alt="Proyecto 3"
+                  />
+                </div>
+              </div>
+            </div>
+            <button
+              class="carousel__btn carousel__btn--prev"
+              aria-label="Anterior"
+            >
+              &#10094;
+            </button>
+            <button
+              class="carousel__btn carousel__btn--next"
+              aria-label="Siguiente"
+            >
+              &#10095;
+            </button>
+            <div class="carousel__dots" aria-hidden="true"></div>
+          </div>
+        </div>
+      </section>
+      <section
+        id="servicios"
+        class="section section--padded"
+        aria-labelledby="servicios-title"
+      >
+        <div class="cards_section">
+          <section class="card">
+            <div class="card__image">
+              <img
+                src="img/carousel/cover_reserva_de_la_26.webp"
+                alt="Santorini Sunset Loft"
+              />
+              <span class="card__bookmark">🔖</span>
+            </div>
+
+            <div class="card__content">
+              <h2 class="card__title">Acanto 2 - Etapa 2</h2>
+              <span class="card__price">💲237 M</span>
+              <p class="card__desc">
+                Experience a cliffside loft with iconic white walls, blue domes,
+                and magical sunset views.
+              </p>
+
+              <div class="card__tags">
+                <span class="tag">⭐ 45.5 m^2</span>
+                <span class="tag">🚽 2 Baños</span>
+                <span class="tag">🛏️ 3 Habitaciones</span>
+              </div>
+
+              <button class="card__btn">Cotiza ahora</button>
+            </div>
+          </section>
+          <section class="card">
+            <div class="card__image">
+              <img
+                src="img/carousel/cover_reserva_de_la_26.webp"
+                alt="Santorini Sunset Loft"
+              />
+              <span class="card__bookmark">🔖</span>
+            </div>
+
+            <div class="card__content">
+              <h2 class="card__title">Acanto 2 - Etapa 2</h2>
+              <span class="card__price">💲237 M</span>
+              <p class="card__desc">
+                Experience a cliffside loft with iconic white walls, blue domes,
+                and magical sunset views.
+              </p>
+
+              <div class="card__tags">
+                <span class="tag">⭐ 45.5 m^2</span>
+                <span class="tag">🚽 2 Baños</span>
+                <span class="tag">🛏️ 3 Habitaciones</span>
+              </div>
+
+              <button class="card__btn">Cotiza ahora</button>
+            </div>
+          </section>
+          <section class="card">
+            <div class="card__image">
+              <img
+                src="img/carousel/cover_reserva_de_la_26.webp"
+                alt="Santorini Sunset Loft"
+              />
+              <span class="card__bookmark">🔖</span>
+            </div>
+
+            <div class="card__content">
+              <h2 class="card__title">Acanto 2 - Etapa 2</h2>
+              <span class="card__price">💲237 M</span>
+              <p class="card__desc">
+                Experience a cliffside loft with iconic white walls, blue domes,
+                and magical sunset views.
+              </p>
+
+              <div class="card__tags">
+                <span class="tag">⭐ 45.5 m^2</span>
+                <span class="tag">🚽 2 Baños</span>
+                <span class="tag">🛏️ 3 Habitaciones</span>
+              </div>
+
+              <button class="card__btn">Cotiza ahora</button>
+            </div>
+          </section>
+          <section class="card">
+            <div class="card__image">
+              <img
+                src="img/carousel/cover_reserva_de_la_26.webp"
+                alt="Santorini Sunset Loft"
+              />
+              <span class="card__bookmark">🔖</span>
+            </div>
+
+            <div class="card__content">
+              <h2 class="card__title">Acanto 2 - Etapa 2</h2>
+              <span class="card__price">💲237 M</span>
+              <p class="card__desc">
+                Experience a cliffside loft with iconic white walls, blue domes,
+                and magical sunset views.
+              </p>
+
+              <div class="card__tags">
+                <span class="tag">⭐ 45.5 m^2</span>
+                <span class="tag">🚽 2 Baños</span>
+                <span class="tag">🛏️ 3 Habitaciones</span>
+              </div>
+
+              <button class="card__btn">Cotiza ahora</button>
+            </div>
+          </section>
+          <section class="card">
+            <div class="card__image">
+              <img
+                src="img/carousel/cover_reserva_de_la_26.webp"
+                alt="Santorini Sunset Loft"
+              />
+              <span class="card__bookmark">🔖</span>
+            </div>
+
+            <div class="card__content">
+              <h2 class="card__title">Acanto 2 - Etapa 2</h2>
+              <span class="card__price">💲237 M</span>
+              <p class="card__desc">
+                Experience a cliffside loft with iconic white walls, blue domes,
+                and magical sunset views.
+              </p>
+
+              <div class="card__tags">
+                <span class="tag">⭐ 45.5 m^2</span>
+                <span class="tag">🚽 2 Baños</span>
+                <span class="tag">🛏️ 3 Habitaciones</span>
+              </div>
+
+              <button class="card__btn">Cotiza ahora</button>
+            </div>
+          </section>
+          <section class="card">
+            <div class="card__image">
+              <img
+                src="img/carousel/cover_reserva_de_la_26.webp"
+                alt="Santorini Sunset Loft"
+              />
+              <span class="card__bookmark">🔖</span>
+            </div>
+
+            <div class="card__content">
+              <h2 class="card__title">Acanto 2 - Etapa 2</h2>
+              <span class="card__price">💲237 M</span>
+              <p class="card__desc">
+                Experience a cliffside loft with iconic white walls, blue domes,
+                and magical sunset views.
+              </p>
+
+              <div class="card__tags">
+                <span class="tag">⭐ 45.5 m^2</span>
+                <span class="tag">🚽 2 Baños</span>
+                <span class="tag">🛏️ 3 Habitaciones</span>
+              </div>
+
+              <button class="card__btn">Cotiza ahora</button>
+            </div>
+          </section>
+        </div>
+      </section>
+      <section class="project-section" aria-labelledby="project-title">
+        <!-- Galería superior -->
+        <div class="gallery" role="list">
+          <img
+            role="listitem"
+            src="https://picsum.photos/id/1011/280/220"
+            alt="Edificio Residencial A"
+          />
+          <img
+            role="listitem"
+            src="https://picsum.photos/id/1015/280/220"
+            alt="Torre Comercial B"
+          />
+          <img
+            role="listitem"
+            src="https://picsum.photos/id/1025/280/220"
+            alt="Vivienda unifamiliar C"
+          />
+          <img
+            role="listitem"
+            src="https://picsum.photos/id/103/280/220"
+            alt="Conjunto mixto D"
+          />
+          <img
+            role="listitem"
+            src="https://picsum.photos/id/104/280/220"
+            alt="Renovación urbana E"
+          />
+          <img
+            role="listitem"
+            src="https://picsum.photos/id/1050/280/220"
+            alt="Proyecto sostenible F"
+          />
+        </div>
+
+        <!-- Cuerpo: título + texto/botón -->
+        <div class="body">
+          <div class="left">
+            <h2 id="project-title" class="headline">
+              <span>Excelencia</span>
+              <span class="accent">Constructiva</span>
+              <span>Innovación</span>
+            </h2>
+          </div>
+          <div class="right">
+            <div class="wip">
+              <span class="dot" aria-hidden="true"></span>
+              <span class="label">Proyecto en desarrollo</span>
+            </div>
+            <p>
+              AR Construcciones es una empresa dedicada a transformar ideas en
+              estructuras reales, con un fuerte compromiso con la calidad, el
+              diseño sostenible y la satisfacción del cliente. Cada proyecto se
+              realiza con estrictos estándares técnicos, materiales responsables
+              y seguimiento personalizado para garantizar entregas puntuales y
+              duraderas.
+            </p>
+            <button class="btn">Conocer más</button>
+          </div>
+        </div>
+
+        <!-- Métricas inferiores -->
+        <div class="meta">
+          <div class="item">
+            <span class="k">Nombre del proyecto</span>
+            <span class="v">AR Urban Heights</span>
+          </div>
+          <div class="item wide">
+            <span class="k">Ubicación</span>
+            <span class="v">Bogotá, Colombia</span>
+          </div>
+          <div class="item">
+            <span class="k">Año</span>
+            <span class="v">2025</span>
+          </div>
+          <div class="item">
+            <span class="k">Unidades</span>
+            <span class="v">Apartamentos 2-4 habitaciones</span>
+          </div>
+          <div class="item">
+            <span class="k">Área total</span>
+            <span class="v">1,200 m²</span>
+          </div>
+        </div>
+      </section>
+
+      <div class="contact_us_section">
+        <section
+          id="contacto"
+          class="section section--padded"
+          aria-labelledby="contacto-title"
+        >
+          <div class="container">
+            <h2 id="contacto-title" class="section__title">Contáctanos</h2>
+            <form class="form" novalidate>
+              <div class="form__field">
+                <label class="form__label" for="name">Nombre</label>
+                <input
+                  class="form__input"
+                  id="name"
+                  name="name"
+                  type="text"
+                  required
+                  placeholder="Tu nombre"
+                />
+                <p class="form__error" data-error-for="name"></p>
+              </div>
+              <div class="form__field">
+                <label class="form__label" for="email">Email</label>
+                <input
+                  class="form__input"
+                  id="email"
+                  name="email"
+                  type="email"
+                  required
+                  placeholder="tucorreo@ejemplo.com"
+                />
+                <p class="form__error" data-error-for="email"></p>
+              </div>
+              <div class="form__field">
+                <label class="form__label" for="message">Mensaje</label>
+                <textarea
+                  class="form__input"
+                  id="message"
+                  name="message"
+                  rows="4"
+                  required
+                  placeholder="Cuéntanos tu proyecto"
+                ></textarea>
+                <p class="form__error" data-error-for="message"></p>
+              </div>
+              <button class="btn btn--primary" type="submit">Enviar</button>
+              <p class="form__success" role="status" aria-live="polite" hidden>
+                ¡Gracias! Revisaremos tu mensaje.
+              </p>
+            </form>
+          </div>
+        </section>
+
+        <section class="gmap" aria-labelledby="gmap-title">
+          <div class="gmap__surface">
+            <header class="gmap__header">
+              <h2 id="gmap-title" class="gmap__title">Encuéntranos aquí</h2>
+              <p class="gmap__subtitle">Dirección en Bogotá</p>
+            </header>
+
+            <div
+              class="gmap__map"
+              role="region"
+              aria-label="Mapa de la dirección en Bogotá"
+            >
+              <iframe
+                class="gmap__iframe"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1327.6090941228833!2d-74.03429225879009!3d4.692704769189029!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e3f9aa69657a40f%3A0xa41ac4006688477a!2sAR%20Construcciones!5e1!3m2!1ses-419!2sco!4v1759208632089!5m2!1ses-419!2sco"
+                referrerpolicy="no-referrer-when-downgrade"
+                allowfullscreen
+                title="Mapa de la dirección en Bogotá"
+              ></iframe>
+            </div>
+
+            <footer class="gmap__footer">
+              <a
+                class="btn btn--primary"
+                href="https://www.google.com/maps/dir/?api=1&destination=Bogotá,Colombia"
+                target="_blank"
+                rel="noopener"
+              >
+                Cómo llegar
+              </a>
+              <a
+                class="gmap__link"
+                href="https://maps.app.goo.gl/MDkpoHULrGym3awY7"
+                target="_blank"
+                rel="noopener"
+              >
+                Abrir en Google Maps
+              </a>
+            </footer>
+          </div>
+        </section>
+      </div>
+    </main>
+
+    <footer class="footer">
+      <!-- CTA superior -->
+      <div class="footer__cta">
+        <p>¿Te ha gustado este proyecto?</p>
+        <button class="footer__cta-btn">📄 Cotiza y separa</button>
+      </div>
+
+      <!-- Secciones del footer -->
+      <div class="footer__main">
+        <div class="footer__column">
+          <h3>Servicios</h3>
+          <ul>
+            <li><a href="#">Ofrece lotes</a></li>
+            <li><a href="#">Calculadora financiera</a></li>
+          </ul>
+        </div>
+
+        <div class="footer__column">
+          <h3>Legal</h3>
+          <ul>
+            <li><a href="#">Políticas y condiciones PSE</a></li>
+            <li><a href="#">Términos y condiciones</a></li>
+            <li><a href="#">Denuncias</a></li>
+            <li><a href="#">Documentos Legales</a></li>
+          </ul>
+        </div>
+
+        <div class="footer__column">
+          <h3>AR Construcciones</h3>
+          <ul>
+            <li><a href="#">Quiénes somos</a></li>
+            <li><a href="#">Trabaja con nosotros</a></li>
+            <li><a href="#">Quiero ser Contratista/Proveedor</a></li>
+          </ul>
+        </div>
+
+        <div class="footer__column">
+          <h3>Atención a clientes</h3>
+          <ul>
+            <li><a href="#">Preguntas frecuentes</a></li>
+            <li><a href="#">Contáctanos</a></li>
+          </ul>
+          <div class="footer__social">
+            <p>Síguenos:</p>
+            <a href="#"><i class="fab fa-facebook"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-youtube"></i></a>
+            <a href="#"><i class="fab fa-tiktok"></i></a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Derechos -->
+      <div class="footer__bottom">
+        <p>Todos los derechos reservados © 2024 AR CONSTRUCCIONES S.A.S.</p>
+      </div>
+    </footer>
+
+    <script src="js/main.js" defer></script>
+  </body>
+</html>

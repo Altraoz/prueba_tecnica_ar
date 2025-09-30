@@ -1,0 +1,95 @@
+.footer {
+  margin-top: 2rem;
+  font-family: Arial, sans-serif;
+  color: #fff;
+
+  // CTA superior
+  &__cta {
+    background: #d90000;
+    text-align: center;
+    padding: 2rem 1rem;
+
+    p {
+      font-size: 1.2rem;
+      margin-bottom: 1rem;
+    }
+
+    &-btn {
+      background: #000;
+      color: #fff;
+      padding: 0.8rem 1.5rem;
+      border-radius: 1rem;
+      font-size: 1rem;
+      border: none;
+      cursor: pointer;
+      transition: background 0.3s;
+
+      &:hover {
+        background: #333;
+      }
+    }
+  }
+
+  // Secciones principales
+  &__main {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 2rem;
+    background: #111;
+    padding: 2rem;
+
+    h3 {
+      font-size: 1rem;
+      margin-bottom: 1rem;
+      font-weight: bold;
+    }
+
+    ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+
+      li {
+        margin-bottom: 0.5rem;
+
+        a {
+          text-decoration: none;
+          color: #ccc;
+          font-size: 0.9rem;
+
+          &:hover {
+            color: #fff;
+          }
+        }
+      }
+    }
+  }
+
+  // Redes sociales
+  &__social {
+    margin-top: 1rem;
+
+    p {
+      margin-bottom: 0.5rem;
+    }
+
+    a {
+      margin-right: 0.8rem;
+      font-size: 1.2rem;
+      color: #ccc;
+
+      &:hover {
+        color: #fff;
+      }
+    }
+  }
+
+  // Pie de página inferior
+  &__bottom {
+    background: #000;
+    text-align: center;
+    padding: 1rem;
+    font-size: 0.85rem;
+    color: #aaa;
+  }
+}
